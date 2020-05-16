@@ -6,19 +6,58 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="../Users/CSS/Styles.css">
-    <title>Main</title>
+    <title>User profile</title>
 </head>
 <body>
-  <div class="container h-100 wrapper ">
-    <div class="row justify-content-center color">
-      <h1 id="login"></h1>
-      <h1 id="name"></h1>
+
+
+    </div>
   </div>
-  <div>
-    <button class="btn btn-light" id="Delete" onclick="ababa()">Eliminar cuenta</button>
-    <button class="btn btn-light" id="GetOut" onclick="Salir()">Salir </button>
+</div>
+<div class="blog-card">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="navbar-brand">
+        <a class="nav-link active" id="modifica_aux" href="Change.html">Modifica</a>
+      </li>
+      <li class="navbar-brand">
+        <a class="nav-link active" id="GetOut"onclick="Salir()">Cerrar Sesión</a>
+      </li>
+    </ul>
   </div>
+  <div class="card-body">
+    <div class="container" id="info_user">
+      <div class="row">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand">     
+               <h1 id="dataa" class="heada">Datos del usuario</h1>
+              </a>
+          </nav>
+        </div>
+        <div class="col-12 my-3 pt-3 " id="Datos_user">
+          <img src="/Users/Images/image.jpg" id="imgg"class="float-left rounded-circle mr-2">
+          <h2 id="Correo"></h2>
+          <h2 id="Nombre"></h2>
+          <div>
+            <button id="Sign" class="btn button5" onclick="location.href='Authentication.html'">Ingresa o regístrate</button>
+        </div>
+
+
+
+
+
+
+
+
+
   </div>
+</div>
+
+
+
+
+
 
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>

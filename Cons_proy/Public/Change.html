@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../Users/CSS/Styles.css">
+    <title>User profile</title>
+</head>
+<body>
+
+
+    </div>
+  </div>
+</div>
+<div class="blog-card">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" id="perfil_aux" href="Users.html">Perfil</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <div class="container" id="info_user">
+      <div class="row">
+        <div class="container shadow">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand">      <h1 id="name">Cambia los datos de tu perfil</h1></a>
+          </nav>
+        </div>
+        <div id="Change ">
+
+            <div class="container ">
+          
+              <div class="row">
+                <div class="col-6">
+                  <input type="email" id="Email_Update" placeholder="Ingresa tu nueva dirección de correo">
+                </div>
+                <div class="col">
+                  <button class="btn button5" onclick="Update_email()">Modificar email</button>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-6">
+                  <input type="text" id="Name_Update" placeholder="Ingresa tu nuevo Nombre">
+                </div>
+                <div class="col">
+                  <button class="btn button5" onclick="Update_name()">Modificar Nombre</button>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                  <button class="btn button5" id="password_update"onclick="showw()">Modificar Contraseña</button>
+            </div>
+            <button class=" btn button" id="Delete" href="Authentification.html" onclick="eliminar()" >Eliminar cuenta</button>
+            <div id="pass_update" class="container"style="display: none">
+              <h2 id="sujerido"></h2>
+              <div class="row">
+
+                <div class="col">
+                  <input type="password" id="Password1" placeholder="Ingrese su nueva Contraseña">
+                </div> 
+                <div class="col">
+                  <input type="password" id="Password2" placeholder="Vuelva a ingresar su nueva Contraseña">
+                  <button class="btn button5" id="password_update2"onclick="Update_password1()">Modificar Contraseña</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="/Auth/JS/Auth_Email.js"></script>
+    <script src="/Users/JS/User_state.js"></script>
+    <script src="/Users/JS/Change.js"></script>
+</body>
+</html>
