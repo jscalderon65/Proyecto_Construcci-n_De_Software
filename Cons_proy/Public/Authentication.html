@@ -10,25 +10,34 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="../Auth/CSS/Animation.css">
   <link rel="stylesheet" href="../Auth/CSS/Styles.css">
+  <link
+  type="text/css"
+  rel="stylesheet"
+  href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css"
+/>
   <title>Login</title>
 </head>
-
 <body>
-
-  <div class="container h-100 wrapper formContent fadeInDown">
-    <div class="row justify-content-center color">
+  <div class="container h-100 wrapper formContent fadeInDown ">
+    <div class="row justify-content-center color fadeIn first">
       <h1>Ingresa o regístrate</h1>
       <div>
         <button class="loginBtn loginBtn--google" onclick="Google_r()">Google</button>
         <button class="loginBtn loginBtn--facebook" onclick="Facebook_r()">Facebook</button>
       </div>
       <div class="wrapper">
-        <input type="email" id="email" placeholder="Correo" />
-        <input type="password" id="password" placeholder="Contraseña" />
+        <div class="input-group mb-3">  
+          <input type="email" class="form-control" id="email" placeholder="Correo">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          </div>
+          <input type="password" class="form-control"  id="password" placeholder="Contraseña"/>
+        </div>
       </div>
       <div>
-        <button class="btn btn-light " onclick="enviar()">Regístrate</button>
-        <button class="btn btn-light" id="access" onclick="acceso()">Accede</button>
+        <button class="btn button5 " onclick="enviar()">Regístrate</button>
+        <button class="btn button5" id="access" onclick="acceso()">Accede</button>
         <footer>
           <a href="Restore.html">¿Olvido su contraseña?</a>
         </footer>

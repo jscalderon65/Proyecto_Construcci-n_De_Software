@@ -1,4 +1,3 @@
-
 var firebaseConfig = {
   apiKey: "AIzaSyBWsT6XTVMGd2cZnBiFYACCbihuGyVlHcU",
   authDomain: "aux22052020.firebaseapp.com",
@@ -25,7 +24,6 @@ function enviar() {
   password=document.getElementById("password").value='';
   email=document.getElementById("email").value='';
 }
-
 function acceso() {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
@@ -50,7 +48,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     var isAnonymous = user.isAnonymous;
     var uid = user.uid;
     var providerData = user.providerData;
-    console.log(user.email);
+    console.log("Esta logueado "+ user.email);
   } else {
     console.log("No hay nadie logueado")
     // User is signed out.

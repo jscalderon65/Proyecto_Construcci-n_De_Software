@@ -33,14 +33,11 @@ function Salir() {
   firebase.auth().signOut().then(function () {
     alert("Se ha cerrado sesión")
     location.reload();
-    
     // Sign-out successful.
-
   }).catch(function (error) {
     // An error happened.
   });
 }
-
 
 
 

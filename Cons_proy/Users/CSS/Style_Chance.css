@@ -1,6 +1,6 @@
 body, html{
     /* The image used */
-    background-image: url(../Images/apod.jpg);
+    background-image: url(../Images/andromeda.jpg);
     height: 100%;
     /* Full height */
   
@@ -45,6 +45,7 @@ html{
   color: black;
   border: 2px solid #555555;
 }
+
 .button5:hover {
   background-color: #555555;
   color: white;

@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="../Users/CSS/Styles.css">
+  <link
+  type="text/css"
+  rel="stylesheet"
+  href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css"
+/>
     <title>User profile</title>
 </head>
 <body>
@@ -36,34 +41,21 @@
           </nav>
         </div>
         <div class="col-12 my-3 pt-3 " id="Datos_user">
-          <img src="/Users/Images/image.jpg" id="imgg"class="float-left rounded-circle mr-2">
+          <img src="/Users/Images/solid1.jpg"width="300" height="300" id="imgg"class="float-left rounded-circle mr-2">
           <h2 id="Correo"></h2>
           <h2 id="Nombre"></h2>
           <div>
             <button id="Sign" class="btn button5" onclick="location.href='Authentication.html'">Ingresa o regístrate</button>
         </div>
-
-
-
-
-
-
-
-
-
   </div>
 </div>
-
-
-
-
-
-
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="/Auth/JS/Auth_Email.js"></script>
     <script src="/Users/JS/User_state.js"></script>
+    <script src="../Users/JS/Firestore.js"></script>
 </body>
 </html>
