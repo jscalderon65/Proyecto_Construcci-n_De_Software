@@ -1,0 +1,82 @@
+body,
+html {
+  background-image: url(../images/october.jpg);
+  height: 100;
+
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.navbar {
+  margin-bottom: 20px;
+  padding: 0px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1d1e33;
+}
+.active a {
+  background-color: #1d1e33 !important;
+}
+.navbar-brand-inverse .nav li a {
+  color: black;
+}
+.a1 {
+  background-color: #1d1e33;
+}
+.content {
+  border: 1px solid #1d1e33;
+  padding: 10px;
+  margin: 10px;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  background: #ffff;
+}
+.jumbotron {
+  background: #1d1e33;
+  color: #1d1e33;
+  padding: 20px 0;
+}
+.jumbotron .titulo-pag {
+  font-size: 80px;
+}
+.dropdown {
+  background: #1d1e33;
+  color: black;
+}
+
+.dropdown-toggle {
+  background: #1d1e33;
+  color: #ffffff;
+}
+.navbar-inverse .nav li a {
+  color: rgb(255, 255, 255);
+}
+.navbar-inverse .nav li a:hover {
+  color: gray !important;
+}
+
+.pregresp {
+  border: 1px solid #7da5e0;
+  padding: 10px;
+  margin: 10px;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background: #ffff;
+}
+
+.pregunta {
+  color: #1d1e33;
+}
+
+.respuestas {
+  color: #000000;
+}
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: grey;
+  background-color: transparent;
+}

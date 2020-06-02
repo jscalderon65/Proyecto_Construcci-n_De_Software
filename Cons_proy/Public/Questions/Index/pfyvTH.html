@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=Device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Página web</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<link
+	type="text/css"
+	rel="stylesheet"
+	href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css"
+  />
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+						<span class="sr-only">Desplegar/Ocultar menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="inicio.html" class="navbar-brand">Estrategias didácticas</a>
+				</div>
+				<!--inicia menu-->
+				<div class="collapse navbar-collapse" id="navegacion-fm"></div>
+					<ul class="nav navbar-nav">
+						<li><a href="inicio.html">Inicio</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Temas <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="Tiro parabólico.html">Tiro Parabólico</a></li>
+								<li><a href="Tiro horizontal.html">Tiro Horizontal</a></li>
+							</ul>
+						</li>
+						<!--<li><a href="preguntas.html">Preguntas de selección múltiple</a></li>
+						<li class="active"><a href="#">Preguntas de falso y verdadero</a></li>-->
+						
+					</ul>
+					
+			</div>
+		</nav>
+	</header>
+
+	
+	<!--jumbotron-->
+
+
+	<section class="main container">
+		<div class="row">
+			<section class="posts col-md-9">
+				<div class="miga-de-pan">
+					<ol class="breadcrumb">
+						<li> <a href="inicio.html">Inicio</a></li>
+						<li>Temas</li></a></li>
+                        <li> <a href="Tiro horizontal.html">Tiro Horizontal</a></li>
+						<li class="active">Preguntas de falso y verdadero</li>
+					</ol>
+				</div>
+			</section>
+		</div>
+		<div class="pregresp">
+			<div class="pregunta">Contesta con Verdadero o Falso cada una de las siguientes afirmaciones, en base a los temas discutidos en esta lección.<br />
+			</div>
+			<p></p>
+        </div>
+        <div class="pregresp">
+			<div class="pregunta">El movimiento de proyectiles en un plano, el desplazamiento tiene dos componentes: vertical y horizontal.<br />
+			</div>
+			<div class="respuestas">
+			  <input type="radio" name="1" id="a1" value="a1" /> Verdadero<br />
+			  <input type="radio" name="1" id="a2" value="a2" /> Falso<br />	
+			  <p></p>
+			  <button class="btn btn-info" id="boton" onclick="ComprobarP1()">Verificar</button>
+			</div>
+			<p></p>
+        </div>
+        <div class="pregresp">
+			<div class="pregunta">Para el movimiento de proyectiles en un plano, la velocidad tiene dos componentes: vertical y horizontal. <br />
+			</div>
+			<div class="respuestas">
+			  <input type="radio" name="2" id="b1" value="b1" /> Verdadero<br />
+			  <input type="radio" name="2" id="b2" value="b2" /> Falso<br />
+			  <p></p>
+			  <button class="btn btn-info" id="boton" onclick="ComprobarP2()">Verificar</button>
+			</div>
+			<p></p>
+        </div>
+        <div class="pregresp">
+			<div class="pregunta">El movimiento en el eje horizontal está influenciado por la aceleración de la gravedad. <br />
+			</div>
+			<div class="respuestas">
+			  <input type="radio" name="3" id="c1" value="c1" /> Verdadero<br />
+			  <input type="radio" name="3" id="c2" value="c2" /> Falso<br />
+			  <p></p>
+			  <button class="btn btn-info" id="boton" onclick="ComprobarP3()">Verificar</button>
+			</div>
+			<p></p>
+        </div>
+        <div class="pregresp">
+			<div class="pregunta">La velocidad total en cualquier momento tiene signo positivo si el proyectil va ascendiendo y signo negativo si va cayendo. <br />
+			</div>
+			<div class="respuestas">
+			  <input type="radio" name="4" id="d1" value="d1" /> Verdadero<br />
+			  <input type="radio" name="4" id="d2" value="d2" /> Falso<br />
+			  <p></p>
+			  <button class="btn btn-info" id="boton" onclick="ComprobarP4()">Verificar</button>
+			</div>
+			<p></p>
+        </div>
+        <div class="pregresp">
+			<div class="pregunta">El desplazamiento vertical es positivo por encima del punto de lanzamiento y es negativo si el proyectil se ubica por debajo de ese punto.<br />
+			</div>
+			<div class="respuestas">
+			  <input type="radio" name="5" id="e1" value="e1" /> Verdadero<br />
+			  <input type="radio" name="5" id="e2" value="e2" /> Falso<br />
+			  <p></p>
+			  <button class="btn btn-info" id="boton" onclick="ComprobarP5()">Verificar</button>
+			</div>
+			<p></p>
+        </div>
+        <div class="pregresp">
+			<div class="pregunta">La aceleración de la gravedad es negativa si el proyectil va subiendo y se considera positiva cuando va cayendo porque aumenta la rapidez del objeto.<br />
+			</div>
+			<div class="respuestas">
+			  <input type="radio" name="6" id="f1" value="f1" /> Verdadero<br />
+			  <input type="radio" name="6" id="f2" value="f2" /> Falso<br />
+			  <p></p>
+			  <button class="btn btn-info" id="boton" onclick="ComprobarP6()">Verificar</button>
+			</div>
+			<p></p>
+        </div>
+        <div class="pregresp">
+			<div class="pregunta">Las fórmulas para movimiento de proyectiles son independientes del signo que se tome para la gravedad y del sistema que se tome como referencia, es decir, son universales.<br />
+			</div>
+			<div class="respuestas">
+			  <input type="radio" name="7" id="g1" value="g1" /> Verdadero<br />
+			  <input type="radio" name="7" id="g2" value="g2" /> Falso<br />
+			  <p></p>
+			  <button class="btn btn-info" id="boton" onclick="ComprobarP7()">Verificar</button>
+			</div>
+			<p></p>
+        </div>
+        <div class="pregresp">
+			<div class="pregunta">La velocidad horizontal en cualquier momento es constante e igual a la velocidad inicial en x durante toda la trayectoria del objeto.<br />
+			</div>
+			<div class="respuestas">
+			  <input type="radio" name="8" id="h1" value="h1" /> Verdadero<br />
+			  <input type="radio" name="8" id="h2" value="h2" /> Falso<br />
+			  <p></p>
+			  <button class="btn btn-info" id="boton" onclick="ComprobarP8()">Verificar</button>
+			</div>
+			<p></p>
+        </div>
+        <div class="pregresp">
+			<div class="pregunta">El tiro horizontal o movimiento semi-parabólico utiliza las mismas ecuaciones del tiro parabólico sustituyendo en éstas el hecho de que el ángulo de lanzamiento es 0°.<br />
+			</div>
+			<div class="respuestas">
+			  <input type="radio" name="9" id="i1" value="i1" /> Verdadero<br />
+			  <input type="radio" name="9" id="i2" value="i2" /> Falso<br />
+			  <p></p>
+			  <button class="btn btn-info" id="boton" onclick="ComprobarP9()">Verificar</button>
+			</div>
+			<p></p>
+        </div>
+        <div class="pregresp">
+			<div class="pregunta">En el movimiento de proyectiles el ángulo de lanzamiento nunca podrá ser negativo. <br />
+			</div>
+			<div class="respuestas">
+			  <input type="radio" name="10" id="j1" value="j1" /> Verdadero<br />
+			  <input type="radio" name="10" id="j2" value="j2" /> Falso<br />
+			  <p></p>
+			  <button class="btn btn-info" id="boton" onclick="ComprobarP10()">Verificar</button>
+			</div>
+			<p></p>
+		</div>
+		<button class="btn btn-info" id="botonR" onclick="Respuestas(respuestaCorrecta)">Enviar todo y verificar</button>
+		<div class="pregresp" id="solucion"></div>
+		<div class="pregresp">
+			<div class="bottomPagination">
+				<nav class="pagination inf">
+					<a href="preguntas.html" class="prev">Preguntas de opción múltiple</a>
+					<span class="sep">|</span>
+					<a href="pfyv.html" class="next">Preguntas de falso y verdadero</a>
+				</nav>
+			</div>
+		</div>
+		
+		
+	</section>
+	
+
+
+
+
+	<footer></footer>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	<script src="../../../../Auth/JS/Auth_Email.js"></script>
+</body>
+</html>

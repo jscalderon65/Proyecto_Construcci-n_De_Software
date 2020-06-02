@@ -50,7 +50,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     var providerData = user.providerData;
     console.log("Esta logueado "+ user.email);
   } else {
-    console.log("No hay nadie logueado")
+    console.log("No hay nadie logueado");
     // User is signed out.
     // ...
   }

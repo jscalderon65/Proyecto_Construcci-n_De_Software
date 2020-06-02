@@ -12,6 +12,11 @@ function eliminar() {
     }).catch(function(error) {
         console.error("Error removing document: ", error);
     });
+    db.collection("Activities").doc(uid).delete().then(function() {
+      console.log("Document successfully deleted!");
+    }).catch(function(error) {
+        console.error("Error removing document: ", error);
+    });
   }
   user.delete().then(function () {
     alert("Se ha borrado el usuario");

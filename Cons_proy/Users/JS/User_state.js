@@ -12,6 +12,8 @@ firebase.auth().onAuthStateChanged(function (user) {
     document.getElementById("Correo").innerHTML = `Correo: ${user.email}`;
     document.getElementById("Nombre").innerHTML = `Nombre: ${user.displayName}`;
     document.getElementById("GetOut").style.display = 'inline';
+    document.getElementById("Progress").style.display = 'inline';
+    document.getElementById("Main").style.display = 'inline';
     document.getElementById("Nombre").style.display = 'inline';
     document.getElementById("modifica_aux").style.display = 'inline';
     document.getElementById("Sign").style.display = 'none';
@@ -22,6 +24,8 @@ firebase.auth().onAuthStateChanged(function (user) {
     document.getElementById("Sign").style.display = 'inline';
     document.getElementById("GetOut").style.display = 'none';
     document.getElementById("modifica_aux").style.display = 'none';
+    document.getElementById("Progress").style.display = 'none';
+    document.getElementById("Main").style.display = 'none';
     document.getElementById("Nombre").style.display = 'none';
     document.getElementById("dataa").style.display = 'none';
     document.getElementById("imgg").style.display = 'none';
