@@ -33,6 +33,7 @@ firebase.auth().onAuthStateChanged(function (user) {
       }
   }).catch(function(error) {
       console.log("Error getting document:", error);
+      alert("intenta resolver todas las actividades!")
   });
    
   });
