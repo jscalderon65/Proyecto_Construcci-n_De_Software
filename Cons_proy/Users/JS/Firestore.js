@@ -13,7 +13,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     if (displayName == null) {
       db.collection("Users").doc(uid).set({
         correo: email,
-        Name: "Nn"
+        Name: "Usuario"
       })
         .then(function (docRef) {
           console.log("Document written " + uid + ": Correo: " + email + ", Nombre: Nn");

@@ -21,19 +21,32 @@
 	href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css"
   />
     <link rel="stylesheet" href="../Progress/CSS/Styles.css">
+    <link rel="stylesheet" href="../Auth/CSS/Animation.css">
     <title>Progreso</title>
   </head>
   <body>
 
+    <div class="card-header fadeIn">
 
-    <div class="container shadow">
+      <ul class="nav nav-tabs card-header-tabs">
+  
+  
+        <li class="navbar-brand">
+          <a class="nav-link active" id="Main" href="Main.html">Inicio</a>
+        </li>
+        <li class="navbar-brand">
+          <a class="nav-link active" id="Main" href="Questions/Index/inicio.html">Actividades</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container shadow ">
         <div class="row">
 
             <!--Menú desplegable-->
             <div class="col-12 ">
                 <hr>
-                <h1 class="h1c">Revisa el progreso en tus actividades</h1>
-                <div class="dropdown">
+                <h1 class="h1c fadeIn second">Revisa el progreso en tus actividades</h1>
+                <div class="dropdown fadeIn third">
                     <button class="btn button5 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Temas
                     </button>
@@ -55,7 +68,7 @@
                 <div >
                     <button class="btn button5" onclick="show_F_tema1()">TIRO PARABOLICO Y SEMI PARABOLICO</button>
                 </div>
-                <div id="P_T1" style="display: none">
+                <div id="P_T1" style="display: none" >
                     <hr>
                     <h1>Preguntas de selección múltiple</h1>
                     <h2 id="BT1_S"></h2>
@@ -68,26 +81,9 @@
                     <h2 id="IT1_FV"></h2>
                     <hr>
                 </div>
-
             </div>
-
-
-
-
-
-
-
         </div>
     </div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -126,5 +122,6 @@
     <script src="Questions/js/app.js"></script>
     <script src="Questions/js/app2.js"></script>
     <script src="../Progress/JS/Consult.js"></script>
+    <script src="../Progress/JS/Firestore_2.js"></script>  
   </body>
 </html>

@@ -3,7 +3,7 @@ var firebaseConfig = {
   authDomain: "aux22052020.firebaseapp.com",
   databaseURL: "https://aux22052020.firebaseio.com",
   projectId: "aux22052020",
-  storageBucket: "aux22052020.appspot.com",
+  storageBucket: "gs://aux22052020.appspot.com",
   messagingSenderId: "558046425728",
   appId: "1:558046425728:web:b3dfcb3f6884642f5fac65",
   measurementId: "G-K12FRW1C39",

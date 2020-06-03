@@ -1,23 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+    type="text/css"
+    rel="stylesheet"
+    href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css"
+    />
+    <link rel="stylesheet" href="../Main/CSS/Styles.css" />
+    <link rel="stylesheet" href="../Auth/CSS/Animation.css" />
+  </head>
+  <body >
+    <div id="particles-js"></div>
+      <section class="banner" id="sec">
+        <header>
+          <a href="#" class="logo"></a>
+          <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content fadeIn cute shadow">
+          <h2>
+            - Bienvenido 
+            <span  id="Nombre" class="hh"></span>
+          </h2>
+          <hr>
+          <p>Este es un espacio didáctico en el que podras estudiar y realizar actividades relacionadas con física y matemática 
+            asi que <h2> Recuerda: </h2>
+          </p>
+          <p id="Frases" class="cute shadow hh">
+          </p>
+          <p>
+            Ahora sabiendo eso revisa los temas, resuelve las actividades y ¡aprende con nosotros!
+          </p>
+          <button class="btn btn-light btn-lg hh" onclick="info()">Info</button>
+        </div>
+      </section>
+      <div id="navigation">
+        <ul>
+          <li><a href="Users.html">Tu Perfil</a></li>
+          <li><a href="Questions/Index/inicio.html">Temas y actividades</a></li>
+          <li><a href="foro.html">Foro</a></li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        function toggle() {
+          var sec = document.getElementById("sec");
+          var nav = document.getElementById("navigation");
+          sec.classList.toggle("active");
+          nav.classList.toggle("active");
+        }
+      </script>
+
+ 
 
 
 
-    <div class="shadow">
-        <h1>Main Page</h1>
-        <a href="Users.html">Perfil -</a>
-        <a href="Questions/Index/inicio.html">Questionario</a>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
@@ -27,5 +87,7 @@
     <script src="../Auth/JS/Auth_SN.js"></script>
     <script src="../Auth/JS/Auth_Email.js"></script>
     <script src="../Main/JS/Permanencia.js"></script>
-</body>
+    <script src="../Main/JS/Main.js"></script>
+    <script src="../Main/JS/Phrases.js"></script>
+  </body>
 </html>

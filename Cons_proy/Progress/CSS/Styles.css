@@ -1,34 +1,50 @@
-body, html{
-    /* The image used */
-    background-image: url(../Images/Galaxi.jpg);
-  
-    /* Full height */
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
+body,
+html {
+  /* The image used */
+  background-image: url(../Images/Galaxi.jpg);
+
+  /* Full height */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-html{
-    background-color: black;
+html {
+  background-color: black;
 }
-h1{
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
+a {
+  transition: all 0.3s ease-in-out;
 }
-h2{
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
+a:hover {
+  transform: translate3d(0px, -3px, 0px);
+  cursor: pointer;
 }
-.h1c{
-    text-align:center; 
+h1 {
+  transition: all 0.3s ease-in-out;
+}
+h1:hover {
+  transform: translate3d(0px, -3px, 0px);
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+.h1c {
+  text-align: center;
 }
 .button5 {
-    background-color: white ;
-    color: black;
-    border: 2px solid #555555;
-  }
-  .button5:hover {
-    background-color: #555555;
-    color: white;
-  }
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}

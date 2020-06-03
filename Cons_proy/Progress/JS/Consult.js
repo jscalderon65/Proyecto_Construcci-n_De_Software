@@ -14,19 +14,19 @@ function show_F_tema1() {
         querySnapshot.forEach((doc) => {
           if(doc.id==uid){
 
-            document.getElementById("IT1_S").innerHTML = `Incorrectas: ${doc.data().Preguntas_Falso_Verdadero.Respuestas_No_Ok}`; 
+            document.getElementById("IT1_S").innerHTML = `Incorrectas: ${doc.data().Preguntas_Seleccion_Multiple.Respuestas_No_Ok}`; 
 
-            document.getElementById("BT1_S").innerHTML = `Correctas: ${doc.data().Preguntas_Falso_Verdadero.Respuestas_ok}`; 
+            document.getElementById("BT1_S").innerHTML = `Correctas: ${doc.data().Preguntas_Seleccion_Multiple.Respuestas_ok}`; 
 
-            document.getElementById("CT1_S").innerHTML = `No respondidas: ${doc.data().Preguntas_Falso_Verdadero.Respuestas_en_blanco}`; 
+            document.getElementById("CT1_S").innerHTML = `No respondidas: ${doc.data().Preguntas_Seleccion_Multiple.Respuestas_en_blanco}`; 
             
 
 
-            document.getElementById("IT1_FV").innerHTML = `Incorrectas: ${doc.data().Preguntas_Seleccion_Multiple.Respuestas_No_Ok}`;
+            document.getElementById("IT1_FV").innerHTML = `Incorrectas: ${doc.data().Preguntas_Falso_Verdadero.Respuestas_No_Ok}`;
 
-            document.getElementById("BT1_FV").innerHTML = `Correctas: ${doc.data().Preguntas_Seleccion_Multiple.Respuestas_ok}`;
+            document.getElementById("BT1_FV").innerHTML = `Correctas: ${doc.data().Preguntas_Falso_Verdadero.Respuestas_ok}`;
 
-            document.getElementById("CT1_FV").innerHTML = `No respondidas: ${doc.data().Preguntas_Seleccion_Multiple.Respuestas_en_blanco}`;
+            document.getElementById("CT1_FV").innerHTML = `No respondidas: ${doc.data().Preguntas_Falso_Verdadero.Respuestas_en_blanco}`;
 
           }
 

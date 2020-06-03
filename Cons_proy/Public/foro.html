@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../Foro/css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Bienvenid@ al Foro...</title>
+</head>
+
+<body id="cuerpo" onload="verificarUsuario() , setButton()">
+
+    <div id="particles-js"></div>
+
+    <div id="userP" class="userSpace">
+
+        <a id="userP2" class="list-group-item list-group-item-action active">
+
+            <div class="d-flex w-100 justify-content-center">
+
+                <img id="avatar" class="rounded-circle imguser">
+
+                <h5 id="root" class="textuserP"></h5>
+
+            </div><button class="btn btn-danger buttonC" onclick="cerrarSesion()">Volver a Inicio</button>
+
+        </a>
+
+    </div>
+
+    <h1>Expresa tus dudas, contesta las de los demas...</h1>
+
+    <div class="bg-dark btn-container">
+
+        <input id="dato" class="inputText" type="text" placeholder="Escribe el texto...">
+
+        <div id="btn" class="btn-item">
+
+            <a id="boton" href="#" class="btn-ghost round">Preguntar</a>
+
+        </div>
+
+    </div>
+
+    <div id="pregunta"></div>
+
+    <div id="ulti"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src=" http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../Foro/js/particles/particles.min.js"></script>
+    <script src="../Foro/js/foro.js"></script>
+    <script src="../Foro/js/particles/particulas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+</body>
+
+</html>

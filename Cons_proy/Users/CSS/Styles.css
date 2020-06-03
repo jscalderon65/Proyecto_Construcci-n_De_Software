@@ -28,9 +28,14 @@ html{
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
   text-align: left;
-
+  transition: all .3s ease-in-out;
 }
-
+.blog-card:hover {
+  transform: translate3d(0px, -3px, 0px);
+}
+.animation{
+  transition:all .5s ease-in-out;
+}
 .button{
   background-color:#CD5C5C;
 
@@ -44,6 +49,20 @@ html{
   background-color: white ;
   color: black;
   border: 2px solid #555555;
+}
+.navbar-brand{
+  transition: all .3s ease-in-out;
+}
+.navbar-brand:hover{
+  transform: translate3d(0px, -3px, 0px);
+  cursor: pointer;  
+}
+a{
+  transition: all .3s ease-in-out;
+}
+a:hover{
+  transform: translate3d(0px, -3px, 0px);
+  cursor: pointer;  
 }
 .button5:hover {
   background-color: #555555;
@@ -69,6 +88,7 @@ h2 {
 }
 button{
     font-family: "Times New Roman";  
+    cursor: pointer;
 }
 .heada{
   text-align: center;
@@ -136,4 +156,34 @@ button{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+  }
+  h2 {
+    animation-duration: 4s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 50%;
+      width: 100%;
+    }
+  }
+  h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }

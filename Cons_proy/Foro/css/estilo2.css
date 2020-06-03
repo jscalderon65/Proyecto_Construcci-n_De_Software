@@ -1,0 +1,216 @@
+* {
+    font-family: 'Times New Roman', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../imagenes/background1.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.login-box {
+    width: 320px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    top: 53%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box a {
+    text-decoration: none
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+}
+
+:root {
+    --pink: #EF3C82;
+    --white: white;
+    --black: black;
+    --red: #E74C3C;
+    --blue: #3498DB;
+    --purple: #9B59B6;
+    --yellow: #FEB506;
+    --green: #62CB31;
+    --orange: orange;
+}
+
+.btn-ghostB {
+    position: relative;
+    display: inline-block;
+    border: 2px solid var(--orange);
+    padding: 15px 30px;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--orange);
+    transition: color 0.5s, background 0.5s;
+    margin-left: 0px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-ghostB.roundB {
+    border-radius: 30px;
+}
+
+.btn-ghostB:hover {
+    color: var(--orange);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.btn-ghostB:active {
+    box-shadow: inset 0 0 20px var(--blue);
+}
+
+.btn-ghostN {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    border: 2px solid var(--green);
+    padding: 10px 50px;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--green);
+    transition: color 0.5s, background 0.5s;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-ghostN.roundN {
+    border-radius: 30px;
+}
+
+.btn-ghostN:hover {
+    color: var(--green);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.btn-ghostN:active {
+    box-shadow: inset 0 0 20px var(--green);
+}
+
+.btn-ghostG {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    border: 2px solid var(--red);
+    padding: 10px 50px;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--red);
+    transition: color 0.5s, background 0.5s;
+    margin-left: -2px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-ghostG.roundG {
+    border-radius: 30px;
+}
+
+.btn-ghostG:hover {
+    color: var(--red);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.btn-ghostG:active {
+    box-shadow: inset 0 0 20px var(--red);
+}
+
+.btn-ghostF {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    border: 2px solid var(--blue);
+    padding: 10px 50px;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--blue);
+    transition: color 0.5s, background 0.5s;
+    margin-left: -2px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-ghostF.roundF {
+    border-radius: 30px;
+}
+
+.btn-ghostF:hover {
+    color: var(--blue);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.btn-ghostF:active {
+    box-shadow: inset 0 0 20px var(--blue);
+}

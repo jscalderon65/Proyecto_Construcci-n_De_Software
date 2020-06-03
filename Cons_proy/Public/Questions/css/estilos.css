@@ -16,6 +16,14 @@ html {
 .active a {
   background-color: #1d1e33 !important;
 }
+.cute {
+  transition: all 0.3s ease-in-out;
+}
+.cute:hover {
+  transform: translate3d(0px, -3px, 0px);
+  cursor: pointer;
+}
+
 .navbar-brand-inverse .nav li a {
   color: black;
 }

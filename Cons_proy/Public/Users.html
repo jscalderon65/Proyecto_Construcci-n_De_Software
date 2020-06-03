@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="../Users/CSS/Styles.css">
+  <link rel="stylesheet" href="../Auth/CSS/Animation.css">
   <link
   type="text/css"
   rel="stylesheet"
@@ -15,11 +16,7 @@
 </head>
 <body>
 
-
-    </div>
-  </div>
-</div>
-<div class="blog-card">
+<div class="blog-card fadeIn">
   <div class="card-header">
 
     <ul class="nav nav-tabs card-header-tabs">
@@ -40,29 +37,26 @@
       <li class="navbar-brand">
         <a class="nav-link active" id="GetOut"onclick="Salir()">Cerrar Sesión</a>
       </li>
-
-
-
-
-
     </ul>
   </div>
-  <div class="card-body">
+  <div class="card-body ">
     <div class="container" id="info_user">
       <div class="row">
         <div class="container">
           <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand">     
-               <h1 id="dataa" class="heada">Datos del usuario</h1>
+               <h1 id="dataa" class="heada fadeIn second">Datos del usuario</h1>
               </a>
           </nav>
         </div>
         <div class="col-12 my-3 pt-3 " id="Datos_user">
-          <img src="/Users/Images/solid1.jpg"width="300" height="300" id="imgg"class="float-left rounded-circle mr-2">
-          <h2 id="Correo"></h2>
-          <h2 id="Nombre"></h2>
-          <div>
-            <button id="Sign" class="btn button5" onclick="location.href='Authentication.html'">Ingresa o regístrate</button>
+          <img src="/Users/Images/solid1.jpg"  style="display: none" width="300" height="300" id="imgg"class="float-left rounded-circle mr-2 fadeIn first ">
+         <ul>
+          <h2 class="fadeIn third"id="Correo"></h2>
+          <h2 class="fadeIn third"id="Nombre"></h2>
+         </ul>
+          <div >
+            <button id="Sign" style="display: none" class="btn button5" onclick="location.href='Authentication.html'">Ingresa o regístrate</button>
         </div>
   </div>
 </div>
