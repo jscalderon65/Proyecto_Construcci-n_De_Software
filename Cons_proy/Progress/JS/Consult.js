@@ -14,7 +14,6 @@ function show_F_tema1() {
         querySnapshot.forEach((doc) => {
           if (doc.id == uid) {
 
-
             document.getElementById("IT1_S").innerHTML = `Incorrectas: ${doc.data().Preguntas_Seleccion_Multiple.Respuestas_No_Ok}`;
 
             document.getElementById("BT1_S").innerHTML = `Correctas: ${doc.data().Preguntas_Seleccion_Multiple.Respuestas_ok}`;
@@ -32,10 +31,6 @@ function show_F_tema1() {
           }
         });
       })
-        .catch(function (error) {
-          alert("¡¡Intenta resolver todas las actividades de este tema para ver tus resultados!!");
-          location.href ="../../Public/Questions/Index/inicio.html";
-        });
     }
   });
 

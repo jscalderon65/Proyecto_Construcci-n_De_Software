@@ -38,7 +38,7 @@ var respuestaCorrecta = new Array("a3", "b1", "c4", "d2", "e3");
                   var email = user.email;
                   var uid = user.uid;
                 }
-                db.collection("Activities").doc(uid).set({
+                db.collection("Activities").doc(uid).update({
                     Preguntas_Seleccion_Multiple: {
                         Respuestas_ok: numeroRespuestasOK,
                         Respuestas_No_Ok: numeroRespuestasKO,
