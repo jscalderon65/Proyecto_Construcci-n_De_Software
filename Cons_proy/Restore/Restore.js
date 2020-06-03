@@ -12,3 +12,6 @@ function Restore(){
 
     }); 
   }
+  function back(){
+    window.location.replace("../../Public/Authentication.html");
+  }
