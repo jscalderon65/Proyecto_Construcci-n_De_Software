@@ -13,23 +13,35 @@ firebase.auth().onAuthStateChanged(function (user) {
       } else {
           // doc.data() will be undefined in this case
           db.collection("Activities").doc(uid).set({
-            Preguntas_Seleccion_Multiple: {
-                Respuestas_ok: 0,
-                Respuestas_No_Ok: 0,
-                Respuestas_en_blanco: 5
+            fisica: {
+              tiro_parabolico_y_horizontal: {
+                Preguntas_Seleccion_Multiple: {
+                    Respuestas_ok: 0,
+                    Respuestas_No_Ok: 0,
+                    Respuestas_en_blanco: 5
+                },
+                Preguntas_Falso_Verdadero: {
+                    Respuestas_ok: 0,
+                    Respuestas_No_Ok: 0,
+                    Respuestas_en_blanco: 10
+                }
+              }        
             },
-            Preguntas_Falso_Verdadero: {
-                Respuestas_ok: 0,
-                Respuestas_No_Ok: 0,
-                Respuestas_en_blanco: 10
+            matematica: {
+              funcion_cuadratica:{
+                Preguntas_Seleccion_Multiple: {
+                  Respuestas_ok: 0,
+                  Respuestas_No_Ok: 0,
+                  Respuestas_en_blanco: 5
+                }          
+              }
             }
         })
           .then(function (docRef) {
             console.log("Document written");
           })
           .catch(function (error) {
-            console.error("Error adding document");
-            
+            console.error("Error adding document");            
         });
       }
   })

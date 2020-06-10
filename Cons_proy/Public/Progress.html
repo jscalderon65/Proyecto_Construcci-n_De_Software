@@ -46,19 +46,24 @@
             <div class="col-12 ">
                 <hr>
                 <h1 class="h1c fadeIn second">Revisa el progreso en tus actividades</h1>
-                <div class="dropdown fadeIn third">
-                    <button class="btn button5 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Temas
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <!--Temas-->
+
+                <div class="btn-group dropright">
+                  <button type="button" class="btn button5" onclick="ocultar()">
+                    TEMAS
+                  </button>
+                  <button type="button" class="btn button5 dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropright</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <a class="dropdown-item" onclick="show_result_physic()">Física</a>
+                    <a class="dropdown-item" onclick="show_result_math()">Matemática</a>
+                  </div>
+                </div>
 
 
-                    <a class="dropdown-item" onclick="show_result()">Física</a>
 
 
-                    </div>
-                </div>  
             </div>
             
             <!--Info Física-->
@@ -67,8 +72,9 @@
                 <h1>Temas de física</h1>
                 <div >
                     <button class="btn button5" onclick="show_F_tema1()">TIRO PARABOLICO Y SEMI PARABOLICO</button>
+
                 </div>
-                <div id="P_T1" style="display: none" >
+                <div id="P_F_T1" style="display: none" >
                     <hr>
                     <h1>Preguntas de selección múltiple</h1>
                     <h2 id="BT1_S"></h2>
@@ -82,6 +88,26 @@
                     <hr>
                 </div>
             </div>
+            <!--Info matemática-->
+            <div class="col-12 " id="M_Tema1" style="display: none">
+              <hr>
+              <h1>Temas de matemática</h1>
+              <div >
+                  <button class="btn button5" onclick="show_M_tema1()">FUNCIÓN CUADRÁTICA</button>
+              </div>
+              <div id="P_M_T1" style="display: none" >
+                  <hr>
+                  <h1>Preguntas de selección múltiple</h1>
+                  <h2 id="MBT1_S"></h2>
+                  <h2 id="MCT1_S"></h2>
+                  <h2 id="MIT1_S"></h2>
+                  <hr>
+              </div>
+          </div>
+
+
+
+
         </div>
     </div>
 

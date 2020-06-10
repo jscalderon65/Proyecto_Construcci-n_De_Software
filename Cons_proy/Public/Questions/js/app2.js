@@ -39,11 +39,11 @@ var respuestaCorrecta = new Array("a3", "b1", "c4", "d2", "e3");
                   var uid = user.uid;
                 }
                 db.collection("Activities").doc(uid).update({
-                    Preguntas_Seleccion_Multiple: {
-                        Respuestas_ok: numeroRespuestasOK,
-                        Respuestas_No_Ok: numeroRespuestasKO,
-                        Respuestas_en_blanco: numeroRespuestasNulas
-                    }
+                    "fisica.tiro_parabolico_y_horizontal.Preguntas_Seleccion_Multiple.Respuestas_ok": numeroRespuestasOK,
+                    "fisica.tiro_parabolico_y_horizontal.Preguntas_Seleccion_Multiple.Respuestas_No_Ok": numeroRespuestasKO,
+                    "fisica.tiro_parabolico_y_horizontal.Preguntas_Seleccion_Multiple.Respuestas_en_blanco": numeroRespuestasNulas
+
+                    
                 })
                 .then(function() {
                     console.log("Document successfully updated!");

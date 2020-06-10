@@ -8,7 +8,6 @@ firebase.initializeApp({
     appId: "1:558046425728:web:b3dfcb3f6884642f5fac65",
     measurementId: "G-K12FRW1C39",
 });
-
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
       // User is signed in.
