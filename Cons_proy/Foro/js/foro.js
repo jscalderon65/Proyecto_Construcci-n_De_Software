@@ -416,6 +416,7 @@ function guardarP() {
 function mostrarP(id1) {
 
     var espacioPregunta = document.getElementById("pregunta");
+    var inicio = document.getElementsByName("mainn");
 
     db.collection("Foro").onSnapshot((querySnapshot) => {
 

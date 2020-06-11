@@ -29,5 +29,5 @@ function info(){
     alert("Desarrolladores: "+
     " Jhonn Calderon, " +
     " Santiago Pujana y" + 
-    " Fabián Sandoval ");
+    " Fabián Sandoval " + "-> Sitio web de donde se tomaron todos los fondos de la página: "+ "https://www.nasa.gov/content/goddard/what-did-hubble-see-on-your-birthday");
 }
